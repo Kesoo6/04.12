@@ -1,0 +1,159 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-transform: capitalize;
+}
+body{
+    height:100%;
+   
+}
+section{
+    position: relative;
+    width:100%;
+    height:100vh;
+    display: flex;
+}
+section .box{
+    width:50%;
+    height:100%;
+    background: rgb(131,58,180);
+    background: radial-gradient(circle, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+}
+section .contentbox{
+    display: flex;
+    width:50%;
+    height:100%;
+    justify-content: center;
+    align-items: center;
+}
+section .contentbox .formbox{
+    width:50%;
+}
+section .contentbox .formbox h1{
+    display: flex;
+    justify-content: center;
+    margin-bottom:8px;
+    color:rgba(131,58,180,1) ;
+    font-weight: 900;
+    font-size: xx-large;
+}
+section .contentbox .formbox h2{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+section .contentbox .formbox .title{
+    font-size:medium;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+section .contentbox .formbox .inputbox{
+       margin-bottom: 20px;
+}
+section .contentbox .formbox .inputbox small{
+    font-weight: 200;
+    color: rgb(102, 101, 101);
+    margin-bottom: 5px;
+    display: inline-block;
+}
+section .contentbox .formbox .inputbox input{
+    width: 100%;
+    padding: 10px 20px;
+    outline:none;
+    font-weight: 200;
+    font-size: small;
+    border:1px solid rgb(182, 182, 182);
+    background: transparent;
+    border-radius:30px;
+}
+section .contentbox .formbox .inputbox input[type="submit"]{
+    background: rgb(131,58,180);
+    background: radial-gradient(circle, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    color:white;
+    cursor: pointer;
+    outline:none;
+}
+section .contentbox .formbox .inputbox input[type="submit"]:hover{
+    transform:scale(1.1);
+}
+section .contentbox .formbox .inputbox p{
+    color:black;
+    font-weight: 500;
+    font-size: medium;
+    display: flex;
+    padding-top: 30px;
+}
+section .contentbox .formbox .inputbox p a{
+    text-decoration: none;
+    font-weight: 600;
+    color:rgba(131,58,180,1);
+    border: 2px solid rgba(131,58,180,1);
+    border-radius: 30px;
+    width:45%;
+    height:40px;
+    padding-top: 10px;
+    display: flex;
+    margin-left:8px;
+}
+section .contentbox .formbox .inputbox p a:hover{
+    transform:scale(0.9);
+    color:rgba(253,29,29,1);
+    border: 2px solid rgba(253,29,29,1);
+}
+section .contentbox .formbox .inputbox a{
+    text-decoration: none;
+    font-weight: 200;
+    color: rgb(102, 101, 101);
+    font-size: small;
+    display: flex;
+    justify-content: center;
+}
+section .contentbox .formbox .inputbox a:hover{
+    color:rgba(252,176,69,1);
+    transform:scale(1.1);
+}
+.box {
+display: flex;
+align-items:center;
+justify-content: center;
+margin:0 auto;
+
+}
+.box .box1{
+    width:50%;
+    height:30%;
+}
+.box .box1 h3{
+    font-size: xx-large;
+    font-weight: 800;
+    color: white;
+}
+.box .box1 small{
+    color:white;
+    font-size: medium;
+    font-weight: 500;
+}
+
+@media (max-width:770px){
+    section .box{
+       
+        width:50%;
+        height:100%;
+        background: rgb(131,58,180);
+        background: radial-gradient(circle, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+        display:none;
+    }
+    section .contentbox{
+    display: flex;
+    width:100%;
+    height:100%;
+    justify-content: center;
+    align-items: center;
+    }
+}
